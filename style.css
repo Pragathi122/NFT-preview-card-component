@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:hsl(217, 54%, 11%) ;
+}
+
+.container{
+    width: 350px;
+    padding: 20px;
+    background-color:hsl(216, 50%, 16%) ;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.top>.image{
+    width: 310px;
+    border-radius: 10px;
+}
+
+.container h2{
+    color:hsl(0, 0%, 100%) ;
+    margin: 6px 0;
+}
+.container p{
+    color:hsl(215, 51%, 70%) ;
+    margin: 10px 0;
+}
+
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.eth-details{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.eth-details>.stat{
+    color: hsl(178, 100%, 50%);
+    font-size: 12px;
+}
+.eth-details img{
+    width: 10px;
+}
+.eth-details>.clock{
+    width: 15px;
+}
+.eth-details>.days{
+    color:hsl(215, 51%, 70%) ;
+    font-size: 12px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 6px;
+}
+.profile img{
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+.profile p{
+    font-size: 14px;
+}
+.profile span{
+    color: hsl(0, 0%, 100%);
+    padding-left: 4px;
+}
+
+.top{
+    position: relative;
+}
+.img-overlay{
+    position: absolute;
+    background-color: aqua;
+    top:0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    display: none;
+}
+.img-overlay img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.top:hover .img-overlay{
+    display: block;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+}
