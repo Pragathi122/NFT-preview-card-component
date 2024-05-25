@@ -32,6 +32,10 @@ body{
     color:hsl(0, 0%, 100%) ;
     margin: 6px 0;
 }
+.container h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
 .container p{
     color:hsl(215, 51%, 70%) ;
     margin: 10px 0;
@@ -81,7 +85,10 @@ body{
     color: hsl(0, 0%, 100%);
     padding-left: 4px;
 }
-
+.profile span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
 .top{
     position: relative;
 }
